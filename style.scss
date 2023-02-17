@@ -1,0 +1,26 @@
+.location-box {
+  display: flex;
+  align-items: center;
+}
+.lat-long {
+  display: flex;
+}
+
+.btn-add,
+.btn-edit,
+.btn-delete {
+  padding: 8px 16px;
+  background-color: gray;
+}
+.empty-page {
+}
+
+// astro checkbox
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 150%;
+}
