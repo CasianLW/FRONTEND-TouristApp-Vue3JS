@@ -1,3 +1,8 @@
+$primary-color: #0056fe;
+$secondary-color: #3c7ffc;
+$tertiary-color: #8f9399;
+$white-color: #ffffff;
+$black-color: #000000;
 .location-box {
   display: flex;
   align-items: center;
@@ -5,13 +10,20 @@
 .lat-long {
   display: flex;
 }
-
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $black-color;
+  color: $white-color;
+}
 .btn-add,
 .btn-edit,
 .btn-delete {
   padding: 8px 16px;
-  background-color: gray;
+  background-color: $primary-color;
+  color: $white-color;
+  border-radius: 9999px;
 }
+
 .empty-page {
 }
 .top-part {

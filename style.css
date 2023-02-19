@@ -7,11 +7,19 @@
   display: flex;
 }
 
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
 .btn-add,
 .btn-edit,
 .btn-delete {
   padding: 8px 16px;
-  background-color: gray;
+  background-color: #0056fe;
+  color: #ffffff;
+  border-radius: 9999px;
 }
 
 .top-part {
