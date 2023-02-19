@@ -14,6 +14,10 @@
   background-color: gray;
 }
 
+.top-part {
+  display: flex;
+}
+
 * {
   box-sizing: border-box;
 }
