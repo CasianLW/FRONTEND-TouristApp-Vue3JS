@@ -286,6 +286,11 @@ input[type=checkbox] {
   font-weight: 700;
 }
 
+.list-title {
+  max-width: 700px;
+  margin: auto;
+}
+
 @media (min-width: 700px) {
   .header-part {
     margin: auto;
