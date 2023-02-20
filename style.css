@@ -140,18 +140,18 @@ html {
   width: 100px;
 }
 
-input[type=checkbox] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
 .task-list-item label input[type=checkbox]:checked:hover::after {
   filter: contrast(200%);
 }
 
 .task-list-item label input[type=checkbox]:hover::after {
   color: hsl(var(--color-green), 100%);
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .task-list-item label input[type=checkbox]::after {
@@ -215,6 +215,18 @@ input[type=checkbox] {
 }
 .header-part form input:hover {
   border: 1px solid #000000;
+}
+.header-part form input[type=checkbox] {
+  border: none;
+}
+.header-part form .task-list-item label input[type=checkbox]::after {
+  border: 0.0625rem solid #000000;
+  color: #000000;
+  box-shadow: -0.1875rem 0.1875rem #000000;
+}
+.header-part form .task-list-item label input[type=checkbox]:checked::after {
+  color: hsl(var(--color-base-white), 100%);
+  box-shadow: -0.0625rem 0.0625rem var(--theme-shade-subtle);
 }
 
 @media (min-width: 700px) {

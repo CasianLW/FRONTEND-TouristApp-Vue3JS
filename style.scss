@@ -149,18 +149,18 @@ html {
 }
 
 // checkbox
-input[type="checkbox"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
 .task-list-item label input[type="checkbox"]:checked:hover::after {
   filter: contrast(200%);
 }
 .task-list-item label input[type="checkbox"]:hover::after {
   color: hsl(var(--color-green), 100%);
 }
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .task-list-item label input[type="checkbox"]::after {
   content: "\2714\fe0e";
   position: initial;
@@ -225,6 +225,22 @@ input[type="checkbox"] {
   input:hover {
     // color: #000000;
     border: 1px solid $black-color;
+  }
+  input[type="checkbox"] {
+    border: none;
+  }
+
+  .task-list-item label input[type="checkbox"]::after {
+    // left: 1rem;
+    // top: 50%;
+
+    border: 0.0625rem solid $black-color;
+    color: $black-color;
+    box-shadow: -0.1875rem 0.1875rem $black-color;
+  }
+  .task-list-item label input[type="checkbox"]:checked::after {
+    color: hsl(var(--color-base-white), 100%);
+    box-shadow: -0.0625rem 0.0625rem var(--theme-shade-subtle);
   }
 }
 
