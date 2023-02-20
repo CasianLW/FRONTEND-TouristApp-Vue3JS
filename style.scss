@@ -279,6 +279,9 @@ input[type="checkbox"] {
 .page-update::after {
   content: "⚙️";
 }
+.title-namings {
+  font-weight: 700;
+}
 @media (min-width: 700px) {
   .header-part {
     margin: auto;
