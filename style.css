@@ -25,6 +25,11 @@
   justify-content: space-between;
   padding: 10px 0px;
 }
+.location-box a p::before {
+  content: "👁️";
+  text-decoration: none;
+  display: inline-block;
+}
 
 ol,
 li {

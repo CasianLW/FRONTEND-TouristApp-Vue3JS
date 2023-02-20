@@ -38,6 +38,11 @@ $black-color: #000000;
   // div {
   //   width: 30%;
   // }
+  a p::before {
+    content: "👁️";
+    text-decoration: none;
+    display: inline-block;
+  }
 }
 ol,
 li {
