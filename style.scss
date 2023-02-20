@@ -267,7 +267,12 @@ input[type="checkbox"] {
   width: fit-content;
   border-radius: 25px;
 }
-
+.page-update {
+  font-weight: 600;
+}
+.page-update::after {
+  content: "⚙️";
+}
 @media (min-width: 700px) {
   .header-part {
     margin: auto;
