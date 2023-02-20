@@ -1,3 +1,26 @@
+:root {
+  --color-base-green: 158, 79%;
+  --color-base-white: 0, 0%;
+  --color-base-gray: 250, 14%;
+  --color-gray-80: var(--color-base-gray), 80%;
+  --color-gray-90: var(--color-base-gray), 90%;
+  --color-gray-95: var(--color-base-gray), 95%;
+  --color-green: var(--color-base-green), 42%;
+  --theme-shade-subtle: hsla(var(--color-gray-95), 0.4);
+  --theme-text: hsla(var(--color-gray-90), 1);
+  --theme-text-light: hsla(var(--color-gray-80), 1);
+  --theme-bg: hsl(256, 27%, 19%);
+
+  color-scheme: dark;
+  // color: var(--theme-text);
+  // font-family: system-ui, var(--font-fallback);
+  // line-height: 1.5;
+  // display: grid;
+  // height: 100%;
+  place-content: center;
+  // background: radial-gradient(purple, black);
+}
+
 $primary-color: #0056fe;
 $secondary-color: #3c7ffc;
 $tertiary-color: #8f9399;
@@ -8,7 +31,7 @@ $black-color: #000000;
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 ol,
 li {
@@ -94,6 +117,9 @@ html {
 }
 
 .task-list-item {
+  label {
+    cursor: pointer;
+  }
   display: flex;
   max-width: 240px;
 }
@@ -105,3 +131,33 @@ html {
 }
 
 // checkbox
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.task-list-item label input[type="checkbox"]::after {
+  content: "\2714\fe0e";
+  position: initial;
+  // left: 1rem;
+  // top: 50%;
+  transform: translateY(-50%) translate(0.1875rem, -0.1875rem);
+  transform-origin: center;
+  text-align: center;
+  line-height: 2;
+  padding: 4px 8px;
+  margin-right: 8px;
+  font-size: 1.25rem;
+  border: 0.0625rem solid var(--theme-shade-subtle);
+  border-radius: 0.3rem;
+  color: var(--theme-shade-subtle);
+  box-shadow: -0.1875rem 0.1875rem var(--theme-shade-subtle);
+  cursor: pointer;
+}
+.task-list-item label input[type="checkbox"]:checked::after {
+  color: hsl(var(--color-base-white), 100%);
+  background-color: hsl(var(--color-green));
+  box-shadow: -0.0625rem 0.0625rem var(--theme-shade-subtle);
+  transform: translateY(-50%) translate(0.0625rem, -0.0625rem);
+}
