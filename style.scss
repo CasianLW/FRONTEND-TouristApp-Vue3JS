@@ -6,25 +6,79 @@ $black-color: #000000;
 .location-box {
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+ol,
+li {
+  list-style: none;
+}
+
+.contains-task-list {
+  padding-left: 0px;
+  display: flex;
+  width: 100%;
+}
+a {
+  color: $white-color;
 }
 .lat-long {
   display: flex;
 }
 body {
+  margin-top: 150px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: $black-color;
   color: $white-color;
 }
 .btn-add,
+.btn-menu,
 .btn-edit,
 .btn-delete {
-  padding: 8px 16px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 24px;
+  font-weight: 500;
   background-color: $primary-color;
   color: $white-color;
   border-radius: 9999px;
+  text-decoration: none;
+  margin: 0 8px;
 }
-
+.btn-menu {
+  color: $black-color;
+  background-color: $white-color;
+  border: solid 2px $primary-color;
+}
+.btn-delete {
+  background-color: #ed5e68;
+}
+.not-found {
+  color: $white-color;
+  margin: auto;
+  padding: 20px;
+  font-size: 3rem;
+  font-weight: 600;
+  width: fit-content;
+  background-color: $primary-color;
+}
 .empty-page {
+}
+.nav-part {
+  position: fixed;
+  background-color: $black-color;
+  top: 0;
+  max-width: 390px;
+  // margin: auto;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  left: 0%;
+  display: flex;
+  color: $white-color;
 }
 .top-part {
   display: flex;
@@ -38,3 +92,16 @@ body {
 html {
   font-size: 150%;
 }
+
+.task-list-item {
+  display: flex;
+  max-width: 240px;
+}
+.location-box {
+  .btn-edit,
+  .btn-delete {
+    width: 100px;
+  }
+}
+
+// checkbox

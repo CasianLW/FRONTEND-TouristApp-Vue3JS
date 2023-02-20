@@ -1,6 +1,24 @@
 .location-box {
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+ol,
+li {
+  list-style: none;
+}
+
+.contains-task-list {
+  padding-left: 0px;
+  display: flex;
+  width: 100%;
+}
+
+a {
+  color: #ffffff;
 }
 
 .lat-long {
@@ -8,18 +26,61 @@
 }
 
 body {
+  margin-top: 150px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #000000;
   color: #ffffff;
 }
 
 .btn-add,
+.btn-menu,
 .btn-edit,
 .btn-delete {
-  padding: 8px 16px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 24px;
+  font-weight: 500;
   background-color: #0056fe;
   color: #ffffff;
   border-radius: 9999px;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.btn-menu {
+  color: #000000;
+  background-color: #ffffff;
+  border: solid 2px #0056fe;
+}
+
+.btn-delete {
+  background-color: #ed5e68;
+}
+
+.not-found {
+  color: #ffffff;
+  margin: auto;
+  padding: 20px;
+  font-size: 3rem;
+  font-weight: 600;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #0056fe;
+}
+
+.nav-part {
+  position: fixed;
+  background-color: #000000;
+  top: 0;
+  max-width: 390px;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  left: 0%;
+  display: flex;
+  color: #ffffff;
 }
 
 .top-part {
@@ -32,4 +93,14 @@ body {
 
 html {
   font-size: 150%;
+}
+
+.task-list-item {
+  display: flex;
+  max-width: 240px;
+}
+
+.location-box .btn-edit,
+.location-box .btn-delete {
+  width: 100px;
 }/*# sourceMappingURL=style.css.map */
