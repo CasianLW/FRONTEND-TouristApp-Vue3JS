@@ -50,7 +50,6 @@ a {
   display: flex;
 }
 body {
-  margin-top: 150px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: $black-color;
   color: $white-color;
@@ -90,10 +89,11 @@ body {
 .empty-page {
 }
 .nav-part {
+  border-radius: 0 0 32px 32px;
   position: fixed;
-  background-color: $black-color;
+  background-color: $primary-color;
   top: 0;
-  max-width: 390px;
+  // max-width: 800px;
   // margin: auto;
   justify-content: space-between;
   padding-left: 5%;
@@ -104,7 +104,12 @@ body {
   color: $white-color;
 }
 .top-part {
-  display: flex;
+  display: block;
+  a::before {
+    content: "👈🏼";
+    text-decoration: none;
+    display: inline-block;
+  }
 }
 // astro checkbox
 
@@ -160,4 +165,18 @@ input[type="checkbox"] {
   background-color: hsl(var(--color-green));
   box-shadow: -0.0625rem 0.0625rem var(--theme-shade-subtle);
   transform: translateY(-50%) translate(0.0625rem, -0.0625rem);
+}
+
+//header part
+.header-part {
+  border-radius: 0 0 32px 32px;
+  margin: 0 -8px;
+  padding: 150px 8px 20px 8px;
+  max-width: 700px;
+  margin: auto;
+  color: $black-color;
+  background-color: $white-color;
+  a {
+    color: $black-color;
+  }
 }

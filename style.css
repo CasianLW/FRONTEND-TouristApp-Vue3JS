@@ -43,7 +43,6 @@ a {
 }
 
 body {
-  margin-top: 150px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #000000;
   color: #ffffff;
@@ -87,10 +86,10 @@ body {
 }
 
 .nav-part {
+  border-radius: 0 0 32px 32px;
   position: fixed;
-  background-color: #000000;
+  background-color: #0056fe;
   top: 0;
-  max-width: 390px;
   justify-content: space-between;
   padding-left: 5%;
   padding-right: 5%;
@@ -101,7 +100,12 @@ body {
 }
 
 .top-part {
-  display: flex;
+  display: block;
+}
+.top-part a::before {
+  content: "👈🏼";
+  text-decoration: none;
+  display: inline-block;
 }
 
 * {
@@ -153,4 +157,17 @@ input[type=checkbox] {
   background-color: hsl(var(--color-green));
   box-shadow: -0.0625rem 0.0625rem var(--theme-shade-subtle);
   transform: translateY(-50%) translate(0.0625rem, -0.0625rem);
+}
+
+.header-part {
+  border-radius: 0 0 32px 32px;
+  margin: 0 -8px;
+  padding: 150px 8px 20px 8px;
+  max-width: 700px;
+  margin: auto;
+  color: #000000;
+  background-color: #ffffff;
+}
+.header-part a {
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */
