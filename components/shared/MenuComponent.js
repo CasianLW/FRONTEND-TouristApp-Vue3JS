@@ -1,5 +1,6 @@
 const MenuComponent = {
-  template: '<div><router-link to="/">Go to Home</router-link> </div> <br> ',
+  template:
+    '<div style="place-self: center;"><router-link class="btn-menu" to="/">Home</router-link> </div> <br> ',
 };
 
 export default MenuComponent;
