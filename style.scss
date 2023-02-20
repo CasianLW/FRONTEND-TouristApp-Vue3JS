@@ -62,8 +62,16 @@ li {
 a {
   color: $white-color;
 }
+label {
+  padding-bottom: 4px;
+}
 .lat-long {
   display: flex;
+  gap: 8px;
+  width: fit-content;
+  input {
+    width: 160px;
+  }
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -237,8 +245,8 @@ input[type="checkbox"] {
     color: #000000;
     background-color: $white-color;
     border: 1px solid $tertiary-color;
-    border-radius: 999px;
-    padding: 8px;
+    border-radius: 12px;
+    padding: 12px;
     margin-bottom: 20px;
   }
   input:hover {
