@@ -257,6 +257,17 @@ input[type="checkbox"] {
   }
 }
 
+.message-success {
+  color: $white-color;
+  background-color: $primary-color;
+  font-weight: 600;
+  margin: auto;
+  margin-top: 28px;
+  padding: 20px;
+  width: fit-content;
+  border-radius: 25px;
+}
+
 @media (min-width: 700px) {
   .header-part {
     margin: auto;
