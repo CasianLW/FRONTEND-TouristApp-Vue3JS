@@ -27,6 +27,7 @@ $tertiary-color: #8f9399;
 $white-color: #ffffff;
 $black-color: #000000;
 .location-box {
+  font-size: 20px;
   border-bottom: 1px solid #8f9399;
   max-width: 700px;
   margin: auto;
@@ -104,6 +105,7 @@ body {
   background-color: $primary-color;
 }
 .empty-page {
+  text-align: center;
 }
 .nav-part {
   border-radius: 0 0 32px 32px;

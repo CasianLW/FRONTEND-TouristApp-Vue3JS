@@ -16,6 +16,7 @@
 }
 
 .location-box {
+  font-size: 20px;
   border-bottom: 1px solid #8f9399;
   max-width: 700px;
   margin: auto;
@@ -98,6 +99,10 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   background-color: #0056fe;
+}
+
+.empty-page {
+  text-align: center;
 }
 
 .nav-part {
