@@ -195,6 +195,11 @@ input[type=checkbox] {
   background-color: #ffffff;
 }
 
+.lat-long div {
+  display: grid;
+  margin-right: auto;
+}
+
 .place-btn-ctnr {
   display: flex;
   flex-wrap: wrap;

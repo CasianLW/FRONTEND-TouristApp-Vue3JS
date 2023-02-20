@@ -203,7 +203,10 @@ input[type="checkbox"] {
   color: $black-color;
   background-color: $white-color;
 }
-
+.lat-long div {
+  display: grid;
+  margin-right: auto;
+}
 .place-btn-ctnr {
   display: flex;
   flex-wrap: wrap;
