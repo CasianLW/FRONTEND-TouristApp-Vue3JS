@@ -97,7 +97,7 @@ const LocationPage = {
         }
 
         const newPlace = await response.json();
-        this.places.push(newPlace);
+        this.places.unshift(newPlace);
 
         // show a success message
         alert("Place added successfully");

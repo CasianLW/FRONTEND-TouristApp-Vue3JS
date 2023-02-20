@@ -63,7 +63,7 @@ const Home = {
         }
 
         const newLocation = await response.json();
-        this.items.push(newLocation);
+        this.items.unshift(newLocation);
 
         // show a success message
         alert("Location added successfully");
