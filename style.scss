@@ -27,6 +27,7 @@ $tertiary-color: #8f9399;
 $white-color: #ffffff;
 $black-color: #000000;
 .location-box {
+  border-bottom: 1px solid #8f9399;
   max-width: 700px;
   margin: auto;
   display: flex;
@@ -118,10 +119,17 @@ body {
   display: block;
   align-items: center;
   justify-content: space-between;
+  a {
+    color: #0056fe;
+    font-weight: 700;
+  }
   a::before {
     content: "👈🏼";
     text-decoration: none;
     display: inline-block;
+  }
+  a:hover {
+    color: $black-color;
   }
 }
 // astro checkbox
@@ -194,9 +202,6 @@ input[type="checkbox"] {
   max-width: 700px;
   color: $black-color;
   background-color: $white-color;
-  a {
-    color: $black-color;
-  }
 }
 
 .place-btn-ctnr {

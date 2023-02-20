@@ -16,6 +16,7 @@
 }
 
 .location-box {
+  border-bottom: 1px solid #8f9399;
   max-width: 700px;
   margin: auto;
   display: flex;
@@ -113,10 +114,17 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.top-part a {
+  color: #0056fe;
+  font-weight: 700;
+}
 .top-part a::before {
   content: "👈🏼";
   text-decoration: none;
   display: inline-block;
+}
+.top-part a:hover {
+  color: #000000;
 }
 
 * {
@@ -185,9 +193,6 @@ input[type=checkbox] {
   max-width: 700px;
   color: #000000;
   background-color: #ffffff;
-}
-.header-part a {
-  color: #000000;
 }
 
 .place-btn-ctnr {
