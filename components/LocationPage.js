@@ -22,7 +22,7 @@ const LocationPage = {
     fetch(`${API_URL}/locations/${this.$route.params.id}/places`)
       .then((response) => response.json())
       .then((data) => {
-        this.places = data;
+        this.places = data.reverse();
       })
       .catch((error) => console.error(error));
   },

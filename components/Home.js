@@ -16,7 +16,7 @@ const Home = {
     fetch(`${API_URL}/locations`)
       .then((response) => response.json())
       .then((data) => {
-        this.items = data;
+        this.items = data.reverse();
       })
       .catch((error) => console.error(error));
   },
