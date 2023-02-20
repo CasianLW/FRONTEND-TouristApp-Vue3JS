@@ -74,6 +74,12 @@ body {
   text-decoration: none;
   margin: 0 8px;
 }
+.btn-add:hover,
+.btn-menu:hover,
+.btn-edit:hover,
+.btn-delete:hover {
+  filter: contrast(400%);
+}
 .btn-menu {
   color: $black-color;
   background-color: $white-color;
@@ -149,6 +155,12 @@ input[type="checkbox"] {
   appearance: none;
 }
 
+.task-list-item label input[type="checkbox"]:checked:hover::after {
+  filter: contrast(200%);
+}
+.task-list-item label input[type="checkbox"]:hover::after {
+  color: hsl(var(--color-green), 100%);
+}
 .task-list-item label input[type="checkbox"]::after {
   content: "\2714\fe0e";
   position: initial;
