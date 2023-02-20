@@ -27,11 +27,16 @@ $tertiary-color: #8f9399;
 $white-color: #ffffff;
 $black-color: #000000;
 .location-box {
+  max-width: 700px;
+  margin: auto;
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
   padding: 10px 0px;
+  // div {
+  //   width: 30%;
+  // }
 }
 ol,
 li {
@@ -105,6 +110,8 @@ body {
 }
 .top-part {
   display: block;
+  align-items: center;
+  justify-content: space-between;
   a::before {
     content: "👈🏼";
     text-decoration: none;
@@ -173,10 +180,27 @@ input[type="checkbox"] {
   margin: 0 -8px;
   padding: 150px 8px 20px 8px;
   max-width: 700px;
-  margin: auto;
   color: $black-color;
   background-color: $white-color;
   a {
     color: $black-color;
+  }
+}
+
+.place-btn-ctnr {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 60%;
+  justify-content: end;
+}
+
+@media (min-width: 700px) {
+  .header-part {
+    margin: auto;
+    padding: 150px 32px 32px 32px;
+  }
+  .top-part {
+    display: flex;
   }
 }

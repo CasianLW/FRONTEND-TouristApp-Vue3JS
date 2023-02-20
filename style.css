@@ -16,6 +16,8 @@
 }
 
 .location-box {
+  max-width: 700px;
+  margin: auto;
   display: flex;
   align-items: center;
   width: 100%;
@@ -101,6 +103,8 @@ body {
 
 .top-part {
   display: block;
+  align-items: center;
+  justify-content: space-between;
 }
 .top-part a::before {
   content: "👈🏼";
@@ -164,10 +168,27 @@ input[type=checkbox] {
   margin: 0 -8px;
   padding: 150px 8px 20px 8px;
   max-width: 700px;
-  margin: auto;
   color: #000000;
   background-color: #ffffff;
 }
 .header-part a {
   color: #000000;
+}
+
+.place-btn-ctnr {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 60%;
+  justify-content: end;
+}
+
+@media (min-width: 700px) {
+  .header-part {
+    margin: auto;
+    padding: 150px 32px 32px 32px;
+  }
+  .top-part {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */
